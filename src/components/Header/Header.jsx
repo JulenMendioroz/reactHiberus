@@ -1,8 +1,8 @@
+import { useState } from "react"
 import { NavLink } from "react-router-dom"
 
-import "./Header.css"
 import { routes } from "../../config/routes"
-import { useState } from "react"
+import "./Header.css"
 
 const links = [
   [routes.HOME, "Home"],
@@ -24,8 +24,8 @@ export const Header = () => {
       </button>
       <nav className={`nav ${isOpen ? "open" : ""}`}>
         <ul className="nav-list">
-          {links.map(([route, label], i) => (
-            <li key={`nav_${i}`}>
+          {links.map(([route, label]) => (
+            <li key={label}>
               <NavLink className="nav-link" to={route} onClick={close}>
                 {label}
               </NavLink>

@@ -1,9 +1,8 @@
-import React from "react"
-import "./Footer.css"
-import cookie from "../../assets/images/cookie1.png"
 import Notificaciones from "../../pages/Notifications/Notifications"
-import { GithubLogo } from "../GithubLogo"
 
+import cookie from "../../assets/images/cookie1.png"
+import { GithubLogo } from "../GithubLogo"
+import "./Footer.css"
 
 const links = [
   { href: "https://github.com/AinhoaSalo", title: "Github Ainhoa" },
@@ -34,8 +33,8 @@ export const Footer = () => {
         </ul>
         <p className="text_footer">
           <span>&copy; 2022 From Héroes y Heroínas</span>
-          {/*<span>Politica de privacidad</span>*/}
-          <a className="estiloA"
+          <a
+            className="estiloA"
             href="https://ayudaleyprotecciondatos.es/wp-content/uploads/2017/12/Pol%C3%ADtica-de-Privacidad-para-aplicaciones-m%C3%B3viles.docx.pdf"
             title="Política de privacidad"
             target="_blank"
@@ -43,7 +42,8 @@ export const Footer = () => {
           >
             Política de privacidad
           </a>
-          <a className="estiloA"
+          <a
+            className="estiloA"
             href="https://www.wonder.legal/es/modele/aviso-legal-condiciones-generales-uso?gclid=Cj0KCQjwjvaYBhDlARIsAO8PkE2P3vMxMa_km0JAmE22vFLX5YxX-vN3i3mMhVeVF899sAs0r3QttfkaAqnpEALw_wcB"
             title="Aviso legal"
             target="_blank"
@@ -51,13 +51,12 @@ export const Footer = () => {
           >
             Aviso Legal
           </a>
-          {/*<span>Aviso legal</span>*/}
           <span>
             Navegando por nuestra web ya estás aceptando las{" "}
             <img src={cookie} alt="cookie" className="img_cookie" />
           </span>
         </p>
-        <Notificaciones/>
+        <Notificaciones />
       </div>
     </footer>
   )

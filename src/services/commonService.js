@@ -1,37 +1,29 @@
-const options = { headers: { "Content-Type": "application/json", Accept: 'application/json' } }
+const API_URL = "https://rickandmortyapi.com/api"
 
-export const getPersonajes = async () => {
-
-    const data = await fetch("https://rickandmortyapi.com/api/character/", options)
-    const {results} = await data.json()
-
-    //console.log(data)
-
-    return results;
+const options = {
+  headers: { "Content-Type": "application/json", Accept: "application/json" },
 }
 
-export const getDetailPersonaje=async (id)=>{
-    const response =await fetch(`https://rickandmortyapi.com/api/character/${id}`)
-    const data =await response.json();
+export const getPersonajes = async () => {
+  const data = await fetch(`${API_URL}/character/`, options)
+  const { results } = await data.json()
+  return results
+}
 
-
-    return data
+export const getDetailPersonaje = async (id) => {
+  const response = await fetch(`${API_URL}/character/${id}`, options)
+  const data = await response.json()
+  return data
 }
 
 export const getEpisodios = async () => {
-
-    const data = await fetch("https://rickandmortyapi.com/api/episode", options)
-    const {results} = await data.json()
-
-    //console.log(data)
-
-    return results;
+  const data = await fetch(`${API_URL}/episode/`, options)
+  const { results } = await data.json()
+  return results
 }
 
-export const getDetailEpisodio=async (id)=>{
-    const response =await fetch(`https://rickandmortyapi.com/api/episode/${id}`)
-    const data =await response.json();
-
-
-    return data
+export const getDetailEpisodio = async (id) => {
+  const response = await fetch(`${API_URL}/episode/${id}`, options)
+  const data = await response.json()
+  return data
 }

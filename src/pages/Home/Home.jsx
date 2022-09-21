@@ -1,9 +1,7 @@
-import React from "react"
-import "./Home.css"
 import { Link } from "react-router-dom"
+
 import { routes } from "../../config/routes"
-import "slick-carousel/slick/slick.css";
-import "slick-carousel/slick/slick-theme.css";
+import "./Home.css"
 
 export const Home = () => {
   return (
@@ -11,7 +9,10 @@ export const Home = () => {
       <div className="containerHome">
         <div className="descripcionHome">
           <h2 className="tituloParrafoHome">Fanpage Rick & Morty</h2>
-          <p className="tituloParrafoHome">Información respecto a los personajes y episodios. ¿Te atreves con nuestro juego de memoria?</p>
+          <p className="tituloParrafoHome">
+            Información respecto a los personajes y episodios. ¿Te atreves con
+            nuestro juego de memoria?
+          </p>
         </div>
         <div className="todoLink">
           <Link className="seccionesHome" to={routes.PERSONAJES}>
@@ -40,7 +41,6 @@ export const Home = () => {
           </Link>
         </div>
       </div>
-
     </>
   )
 }

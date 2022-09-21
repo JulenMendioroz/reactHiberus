@@ -1,17 +1,15 @@
-import React, { useState, useEffect } from 'react'
-import { Card } from '../../components/Card/Card.jsx'
-import "./Personajes.css"
-import { getPersonajes } from '../../services/commonService.js'
+import { useState, useEffect } from "react"
 
-//PINTAR DATOS PARA LUIS
+import { Card } from "../../components/Card/Card.jsx"
+import { getPersonajes } from "../../services/commonService.js"
+import "./Personajes.css"
 
 export const Personajes = () => {
   const [personajes, setPersonajes] = useState([])
-  const [search, setSearch] = useState("");
+  const [search, setSearch] = useState("")
 
   useEffect(() => {
-    getPersonajes().then(results => {
-      console.log(results)
+    getPersonajes().then((results) => {
       setPersonajes(results)
     })
   }, [])
@@ -21,18 +19,27 @@ export const Personajes = () => {
   }
 
   return (
-    <div className='containerPersonajes'>
-      <div className='buscador'>
-        <label className='lab' htmlFor="search">Buscador:</label>
-        <input className='inp' value={search} onChange={searcher} type="text" placeholder='Search' id='search' />
+    <div className="containerPersonajes">
+      <div className="buscador">
+        <label className="lab" htmlFor="search">
+          Buscador:
+        </label>
+        <input
+          className="inp"
+          value={search}
+          onChange={searcher}
+          type="text"
+          placeholder="Search"
+          id="search"
+        />
       </div>
-      {
-
-        personajes.filter(per =>
+      {personajes
+        .filter((per) =>
           per.name.toLowerCase().includes(search.toLocaleLowerCase())
-        ).map(per => <Card key={per.id} name={per.name} image={per.image} id={per.id} />)
-
-      }
+        )
+        .map((per) => (
+          <Card key={per.id} name={per.name} image={per.image} id={per.id} />
+        ))}
     </div>
   )
 }

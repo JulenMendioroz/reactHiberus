@@ -100,7 +100,9 @@ export const Juego = () => {
           <div className="game-modal-body">
             <span>Juego terminado</span>
             <span>Mejor marca: {bestScore}</span>
-            <button className="btn-restart" onClick={restart}>Volver a jugar</button>
+            <button className="btn-restart" onClick={restart}>
+              Volver a jugar
+            </button>
           </div>
         </div>
       )}

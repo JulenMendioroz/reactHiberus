@@ -1,85 +1,83 @@
 .form {
-    display: flex;
-    justify-content: center;
-    min-height: max-content;
-    background-color: #628e91;
-    flex-direction: column;
-    align-items: center;
-    border: 1px solid #00DEEA;
-    margin: 5% 20%;
-    padding: 4% 0 6% 0;
-    border-radius: 5px;
+  display: flex;
+  justify-content: center;
+  min-height: max-content;
+  background-color: #628e91;
+  flex-direction: column;
+  align-items: center;
+  border: 1px solid #00deea;
+  margin: 5% 20%;
+  padding: 4% 0 6% 0;
+  border-radius: 5px;
 }
 
 .titleform {
-    font-size: 2rem;
-    color: #F2E852;
-    margin-bottom: 10px;
+  font-size: 2rem;
+  color: #f2e852;
+  margin-bottom: 10px;
 }
 
 .labelForm {
-    color: white;
-    float: left;
-    text-align: left;
-    width: 200px;
+  color: white;
+  float: left;
+  text-align: left;
+  width: 200px;
 }
 
 .inputForm {
-    border: none;
-    border-radius: 4px;
-    padding: 4px;
-    margin: 5px;
-    width: 300px;
+  border: none;
+  border-radius: 4px;
+  padding: 4px;
+  margin: 5px;
+  width: 300px;
 }
 
 .buttonContainer {
-    margin: 30px;
-    display: grid;
-    place-content: center;
+  margin: 30px;
+  display: grid;
+  place-content: center;
 }
 
 .button {
-    background-color: #F2E852;
-    border: none;
-    color: black;
-    padding: 5px 10px;
-    border-radius: 4px;
-
+  background-color: #f2e852;
+  border: none;
+  color: black;
+  padding: 5px 10px;
+  border-radius: 4px;
 }
 
 .errors {
-    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial;
-    font-size: 15px;
-    color: rgb(112, 22, 22);
-    margin-left: 10px;
-    text-align: center;
+  font-family: "Franklin Gothic Medium", "Arial Narrow", Arial;
+  font-size: 15px;
+  color: rgb(112, 22, 22);
+  margin-left: 10px;
+  text-align: center;
 }
 
 @media (max-width: 1080px) and (min-width: 681px) {
-    .labelInputForm{
-        display: flex;
-        flex-wrap: wrap;
-    }
+  .labelInputForm {
+    display: flex;
+    flex-wrap: wrap;
+  }
 
-    .inputForm {
-        width: 200px;
-    }
+  .inputForm {
+    width: 200px;
+  }
 }
 
-
 @media (max-width: 680.99px) {
-    .labelInputForm {
-        display: grid;
-        place-content: center;
-    }
-    .labelInputForm{
-        display: flex;
-        flex-wrap: wrap;
-    }
+  .labelInputForm {
+    display: grid;
+    place-content: center;
+  }
+  .labelInputForm {
+    display: flex;
+    flex-wrap: wrap;
+  }
 
-    .labelForm,
-    .inputForm {
-        text-align: center;
-        width: 200px;
-    }
+  .labelForm,
+  .inputForm {
+    text-align: center;
+    width: 200px;
+  }
 }
