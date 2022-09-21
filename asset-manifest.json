@@ -1,6 +1,6 @@
 {
   "files": {
-    "main.css": "/reactHiberus/static/css/main.ec22e64e.css",
+    "main.css": "/reactHiberus/static/css/main.ea600056.css",
     "main.js": "/reactHiberus/static/js/main.62f03c06.js",
     "static/media/portal.gif": "/reactHiberus/static/media/portal.f7a3a35106b3766c24d4.gif",
     "static/media/cookie1.png": "/reactHiberus/static/media/cookie1.e5a5d7559c6cfc9789c1.png",
@@ -11,11 +11,11 @@
     "static/media/notification.woff?s3g3t9": "/reactHiberus/static/media/notification.c392cd33d9d9de730f9d.woff",
     "static/media/notification.ttf?s3g3t9": "/reactHiberus/static/media/notification.c5d9251ea82e42f75381.ttf",
     "index.html": "/reactHiberus/index.html",
-    "main.ec22e64e.css.map": "/reactHiberus/static/css/main.ec22e64e.css.map",
+    "main.ea600056.css.map": "/reactHiberus/static/css/main.ea600056.css.map",
     "main.62f03c06.js.map": "/reactHiberus/static/js/main.62f03c06.js.map"
   },
   "entrypoints": [
-    "static/css/main.ec22e64e.css",
+    "static/css/main.ea600056.css",
     "static/js/main.62f03c06.js"
   ]
 }
