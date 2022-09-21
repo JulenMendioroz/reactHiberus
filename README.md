@@ -2,6 +2,9 @@
 
 Fanpage donde encontrar información respecto a los personajes y episodios donde además podrás escribirnos. ¿Te atreves con nuestro juego de memoria?
 
+Enlace a la página:
+https://julenmendioroz.github.io/reactHiberus/
+
 ![Image text](./src/assets/images/HomeReadme.PNG)
 
 ## Personas que han desarrollado el proyecto
